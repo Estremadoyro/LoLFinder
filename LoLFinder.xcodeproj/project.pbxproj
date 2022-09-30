@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4821743798F0700689251427 /* Pods_LoLFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 562CE9D7EC8B65E1BFBA57E8 /* Pods_LoLFinder.framework */; };
+		A7487AB128E539DE00E312CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7487AB028E539DE00E312CE /* AppDelegate.swift */; };
+		A7487AB328E539DE00E312CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7487AB228E539DE00E312CE /* SceneDelegate.swift */; };
+		A7487ABA28E539DF00E312CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7487AB928E539DF00E312CE /* Assets.xcassets */; };
+		A7487ABD28E539DF00E312CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7487ABB28E539DF00E312CE /* LaunchScreen.storyboard */; };
+		A7487AC528E53A9D00E312CE /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7487AC428E53A9D00E312CE /* HomeModule.swift */; };
+		A7487AC728E53AF200E312CE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7487AC628E53AF200E312CE /* HomeViewController.swift */; };
+		A7A14A8528E5492200ED4127 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A14A8428E5492200ED4127 /* HomeRouter.swift */; };
+		A7A14A8728E5492B00ED4127 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A14A8628E5492B00ED4127 /* HomePresenter.swift */; };
+		A7A14A8928E5493500ED4127 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A14A8828E5493500ED4127 /* HomeInteractor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		562CE9D7EC8B65E1BFBA57E8 /* Pods_LoLFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoLFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F1C5A8C7763FE7F8E45672 /* Pods-LoLFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoLFinder.debug.xcconfig"; path = "Target Support Files/Pods-LoLFinder/Pods-LoLFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		79F5C9FDC560BC1200343D5C /* Pods-LoLFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoLFinder.release.xcconfig"; path = "Target Support Files/Pods-LoLFinder/Pods-LoLFinder.release.xcconfig"; sourceTree = "<group>"; };
+		A7487AAD28E539DE00E312CE /* LoLFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoLFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7487AB028E539DE00E312CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7487AB228E539DE00E312CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A7487AB928E539DF00E312CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7487ABC28E539DF00E312CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7487ABE28E539DF00E312CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7487AC428E53A9D00E312CE /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
+		A7487AC628E53AF200E312CE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A7A14A8428E5492200ED4127 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		A7A14A8628E5492B00ED4127 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		A7A14A8828E5493500ED4127 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7487AAA28E539DE00E312CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4821743798F0700689251427 /* Pods_LoLFinder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2713E9582DB2370B78522EB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72F1C5A8C7763FE7F8E45672 /* Pods-LoLFinder.debug.xcconfig */,
+				79F5C9FDC560BC1200343D5C /* Pods-LoLFinder.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		301E16E41C1E0BDA23815EBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				562CE9D7EC8B65E1BFBA57E8 /* Pods_LoLFinder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7487AA428E539DE00E312CE = {
+			isa = PBXGroup;
+			children = (
+				A7487AAF28E539DE00E312CE /* LoLFinder */,
+				A7487AAE28E539DE00E312CE /* Products */,
+				2713E9582DB2370B78522EB2 /* Pods */,
+				301E16E41C1E0BDA23815EBC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7487AAE28E539DE00E312CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7487AAD28E539DE00E312CE /* LoLFinder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7487AAF28E539DE00E312CE /* LoLFinder */ = {
+			isa = PBXGroup;
+			children = (
+				A7487AB028E539DE00E312CE /* AppDelegate.swift */,
+				A7487AB228E539DE00E312CE /* SceneDelegate.swift */,
+				A7A14A8C28E55E9E00ED4127 /* Models */,
+				A7A14A8A28E55E4400ED4127 /* Network */,
+				A7A14A8B28E55E5400ED4127 /* Repositories */,
+				A7487AC828E53AFD00E312CE /* Screens */,
+				A7487AB928E539DF00E312CE /* Assets.xcassets */,
+				A7487ABB28E539DF00E312CE /* LaunchScreen.storyboard */,
+				A7487ABE28E539DF00E312CE /* Info.plist */,
+			);
+			path = LoLFinder;
+			sourceTree = "<group>";
+		};
+		A7487AC828E53AFD00E312CE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A7487AC928E53B0900E312CE /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A7487AC928E53B0900E312CE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A7487AC428E53A9D00E312CE /* HomeModule.swift */,
+				A7487AC628E53AF200E312CE /* HomeViewController.swift */,
+				A7A14A8428E5492200ED4127 /* HomeRouter.swift */,
+				A7A14A8628E5492B00ED4127 /* HomePresenter.swift */,
+				A7A14A8828E5493500ED4127 /* HomeInteractor.swift */,
+				A7A14A8D28E55F0400ED4127 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A7A14A8A28E55E4400ED4127 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A7A14A8B28E55E5400ED4127 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A7A14A8C28E55E9E00ED4127 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A7A14A8D28E55F0400ED4127 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7487AAC28E539DE00E312CE /* LoLFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7487AC128E539DF00E312CE /* Build configuration list for PBXNativeTarget "LoLFinder" */;
+			buildPhases = (
+				44B812ECE04EDE93BFB0C2B0 /* [CP] Check Pods Manifest.lock */,
+				A7487AA928E539DE00E312CE /* Sources */,
+				A7487AAA28E539DE00E312CE /* Frameworks */,
+				A7487AAB28E539DE00E312CE /* Resources */,
+				5BCDF152929D724DC75E352E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoLFinder;
+			productName = LoLFinder;
+			productReference = A7487AAD28E539DE00E312CE /* LoLFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7487AA528E539DE00E312CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					A7487AAC28E539DE00E312CE = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A7487AA828E539DE00E312CE /* Build configuration list for PBXProject "LoLFinder" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7487AA428E539DE00E312CE;
+			productRefGroup = A7487AAE28E539DE00E312CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7487AAC28E539DE00E312CE /* LoLFinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7487AAB28E539DE00E312CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7487ABD28E539DF00E312CE /* LaunchScreen.storyboard in Resources */,
+				A7487ABA28E539DF00E312CE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44B812ECE04EDE93BFB0C2B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoLFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BCDF152929D724DC75E352E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoLFinder/Pods-LoLFinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoLFinder/Pods-LoLFinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoLFinder/Pods-LoLFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7487AA928E539DE00E312CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7487AC728E53AF200E312CE /* HomeViewController.swift in Sources */,
+				A7487AB128E539DE00E312CE /* AppDelegate.swift in Sources */,
+				A7487AC528E53A9D00E312CE /* HomeModule.swift in Sources */,
+				A7A14A8728E5492B00ED4127 /* HomePresenter.swift in Sources */,
+				A7487AB328E539DE00E312CE /* SceneDelegate.swift in Sources */,
+				A7A14A8528E5492200ED4127 /* HomeRouter.swift in Sources */,
+				A7A14A8928E5493500ED4127 /* HomeInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A7487ABB28E539DF00E312CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7487ABC28E539DF00E312CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7487ABF28E539DF00E312CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7487AC028E539DF00E312CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7487AC228E539DF00E312CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72F1C5A8C7763FE7F8E45672 /* Pods-LoLFinder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M5AB5V73J2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LoLFinder/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.estremadoyro.LoLFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A7487AC328E539DF00E312CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F5C9FDC560BC1200343D5C /* Pods-LoLFinder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M5AB5V73J2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LoLFinder/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.estremadoyro.LoLFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7487AA828E539DE00E312CE /* Build configuration list for PBXProject "LoLFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7487ABF28E539DF00E312CE /* Debug */,
+				A7487AC028E539DF00E312CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7487AC128E539DF00E312CE /* Build configuration list for PBXNativeTarget "LoLFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7487AC228E539DF00E312CE /* Debug */,
+				A7487AC328E539DF00E312CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7487AA528E539DE00E312CE /* Project object */;
+}
