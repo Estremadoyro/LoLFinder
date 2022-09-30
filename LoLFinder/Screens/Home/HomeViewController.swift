@@ -37,8 +37,6 @@ private extension HomeViewController {
         let titleAttributes: [NSAttributedString.Key: UIColor] = [.foregroundColor: .white]
         navigationItem.title = "LoL Finder"
         navigationController?.navigationBar.titleTextAttributes = titleAttributes
-        let a = randomObj
-        print("senku [DEBUG] randomClass @ \(Unmanaged.passRetained(a).toOpaque())")
     }
 }
 
