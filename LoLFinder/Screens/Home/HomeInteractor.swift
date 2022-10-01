@@ -14,29 +14,29 @@ final class HomeInteractor: HomeInteractive {
     // Repositories
     private var playerRepository: PlayerRepositoryContract
     // Observables
-    private let playerObservable = PublishSubject<Player>()
+    private let playerObservable = PublishSubject<PlayerEntity>()
     
     // MARK:  Presentable observables
-    var currentPlayer: Driver<Player> {
-        return playerObservable.asDriver(onErrorJustReturn: Player())
+    var currentPlayer: Driver<PlayerEntity> {
+        return playerObservable.asDriver(onErrorJustReturn: PlayerEntity())
     }
     
     let dummyPlayer: Player = {
-        let player = Player()
-        //        player.name = "7speedcell7"
-//        player.level = 120
+        var player = Player()
+        player.name = "7speedcell7"
+        player.level = 120
         return player
     }()
         
     // MARK:  Initializer
     init(playerRepository: PlayerRepositoryContract) {
         self.playerRepository = playerRepository
-//        self.playerRepository.addFavoritePlayer(player: dummyPlayer)
-        self.playerRepository.getPlayer(name: "", region: .lan)
+        let player = self.playerRepository.getPlayer(name: "7speedcell7", region: .lan)
+        print("senku [DEBUG] \(String(describing: type(of: self))) - player: \(player)")
     }
 }
 
 // MARK: - HomeInteractive
 protocol HomeInteractive {
-    var currentPlayer: Driver<Player> { get }
+    var currentPlayer: Driver<PlayerEntity> { get }
 }

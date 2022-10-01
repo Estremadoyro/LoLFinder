@@ -18,13 +18,11 @@ final class HomeModule: ScreenModule {
     // # MARK: Initializers
     init() {
 
-        // Data containers
-        let container = CoreDataSource().container
         // Data sources
-        let playerLocalDataSource = PlayerLocalDataSource()
-        playerLocalDataSource.coreDataContainer = container
+        let playerCoreDataSource = PlayerCoreDataSource()
+        playerCoreDataSource.coreDataContainer = CoreDataManager.shared.container
         // Repositories
-        let playerRepository = PlayerRepository(playerLocalDataSource: playerLocalDataSource)
+        let playerRepository = PlayerRepository(playerLocalDataSource: playerCoreDataSource)
         
         // VIPER
         let interactor = HomeInteractor(playerRepository: playerRepository)

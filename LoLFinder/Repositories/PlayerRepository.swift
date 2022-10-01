@@ -12,7 +12,7 @@ final class PlayerRepository {
     // Data sources
     // CoreData, network, etc
     private let playerLocalDataSource: PlayerDataSourceContract
-    
+
     init(playerLocalDataSource: PlayerDataSourceContract) {
         self.playerLocalDataSource = playerLocalDataSource
     }
@@ -20,23 +20,33 @@ final class PlayerRepository {
 
 // MARK: - RepositoryMethods
 extension PlayerRepository: PlayerRepositoryContract {
-    func getPlayer(name: String, region: Region) {
-        playerLocalDataSource.getPlayer(name: name, region: region)
+    func getPlayer(name: String, region: Region) -> PlayerEntity {
         print("senku [DEBUG] \(String(describing: type(of: self))) - getPlayer()")
+        return playerLocalDataSource.getPlayer(name: name, region: region)
     }
 
     func addFavoritePlayer(player: Player) {
         playerLocalDataSource.addFavoritePlayer(player: player)
     }
-    func getAllFavoritePlayers() -> [Player] {
-        return [Player]()
+
+    func getAllFavoritePlayers() -> [PlayerEntity] {
+        let players = playerLocalDataSource.getAllFavoritePlayers()
+        print("senku [DEBUG] \(String(describing: type(of: self))) - getAllFavoritePlayers()")
+        print("senku [DEBUG] \(String(describing: type(of: self))) - \(players.map { $0.name ?? "" })")
+        return players
     }
 }
 
 // MARK: - RepositoryContract
 protocol PlayerRepositoryContract {
-    func getPlayer(name: String, region: Region)
+    func getPlayer(name: String, region: Region) -> PlayerEntity
     func addFavoritePlayer(player: Player)
-    func getAllFavoritePlayers() -> [Player]
+    func getAllFavoritePlayers() -> [PlayerEntity]
 }
 
+// MARK: - PlayerDataSource
+protocol PlayerDataSourceContract {
+    func getPlayer(name: String, region: Region) -> PlayerEntity
+    func addFavoritePlayer(player: Player)
+    func getAllFavoritePlayers() -> [PlayerEntity]
+}

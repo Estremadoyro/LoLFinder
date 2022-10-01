@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4821743798F0700689251427 /* Pods_LoLFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 562CE9D7EC8B65E1BFBA57E8 /* Pods_LoLFinder.framework */; };
+		A72ED85528E8D7F6008CE84D /* PlayerEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72ED85428E8D7F6008CE84D /* PlayerEntity+CoreDataClass.swift */; };
+		A72ED85628E8D7F6008CE84D /* PlayerEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72ED85328E8D7F6008CE84D /* PlayerEntity+CoreDataProperties.swift */; };
+		A72ED85A28E8E7FA008CE84D /* PlayerNetworkDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72ED85928E8E7FA008CE84D /* PlayerNetworkDataSource.swift */; };
+		A72ED85D28E8ED96008CE84D /* PlayerEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72ED85C28E8ED96008CE84D /* PlayerEndpoint.swift */; };
+		A72ED85F28E8EF7F008CE84D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72ED85E28E8EF7F008CE84D /* API.swift */; };
+		A72ED86228E8F4C6008CE84D /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72ED86128E8F4C6008CE84D /* URLParameterEncoder.swift */; };
+		A72ED86428E8F7E5008CE84D /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72ED86328E8F7E5008CE84D /* ParameterEncoder.swift */; };
+		A72ED86628E8FF61008CE84D /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72ED86528E8FF61008CE84D /* JSONParameterEncoder.swift */; };
 		A7487AB128E539DE00E312CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7487AB028E539DE00E312CE /* AppDelegate.swift */; };
 		A7487AB328E539DE00E312CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7487AB228E539DE00E312CE /* SceneDelegate.swift */; };
 		A7487ABA28E539DF00E312CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7487AB928E539DF00E312CE /* Assets.xcassets */; };
@@ -17,17 +25,25 @@
 		A7A14A8528E5492200ED4127 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A14A8428E5492200ED4127 /* HomeRouter.swift */; };
 		A7A14A8728E5492B00ED4127 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A14A8628E5492B00ED4127 /* HomePresenter.swift */; };
 		A7A14A8928E5493500ED4127 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A14A8828E5493500ED4127 /* HomeInteractor.swift */; };
+		A7A55EA328E8D67F00B20DBC /* LoLFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7A55EA128E8D67F00B20DBC /* LoLFinder.xcdatamodeld */; };
 		A7BBB49B28E7E60D001B1712 /* PlayerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BBB49A28E7E60D001B1712 /* PlayerRepository.swift */; };
 		A7BBB49D28E7E6CC001B1712 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BBB49C28E7E6CC001B1712 /* Player.swift */; };
-		A7BBB4A128E7EE20001B1712 /* PlayerLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BBB4A028E7EE20001B1712 /* PlayerLocalDataSource.swift */; };
-		A7BBB4A428E7F61A001B1712 /* Player.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7BBB4A228E7F61A001B1712 /* Player.xcdatamodeld */; };
-		A7BBB4A928E80684001B1712 /* CoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BBB4A828E80684001B1712 /* CoreDataSource.swift */; };
+		A7BBB4A128E7EE20001B1712 /* PlayerCoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BBB4A028E7EE20001B1712 /* PlayerCoreDataSource.swift */; };
+		A7BBB4A928E80684001B1712 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BBB4A828E80684001B1712 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		562CE9D7EC8B65E1BFBA57E8 /* Pods_LoLFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoLFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F1C5A8C7763FE7F8E45672 /* Pods-LoLFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoLFinder.debug.xcconfig"; path = "Target Support Files/Pods-LoLFinder/Pods-LoLFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		79F5C9FDC560BC1200343D5C /* Pods-LoLFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoLFinder.release.xcconfig"; path = "Target Support Files/Pods-LoLFinder/Pods-LoLFinder.release.xcconfig"; sourceTree = "<group>"; };
+		A72ED85328E8D7F6008CE84D /* PlayerEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PlayerEntity+CoreDataProperties.swift"; path = "/Users/leonardo/Code/Projects/LoLFinder/LoLFinder/Models/PlayerEntity+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		A72ED85428E8D7F6008CE84D /* PlayerEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PlayerEntity+CoreDataClass.swift"; path = "/Users/leonardo/Code/Projects/LoLFinder/LoLFinder/Models/PlayerEntity+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		A72ED85928E8E7FA008CE84D /* PlayerNetworkDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNetworkDataSource.swift; sourceTree = "<group>"; };
+		A72ED85C28E8ED96008CE84D /* PlayerEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerEndpoint.swift; sourceTree = "<group>"; };
+		A72ED85E28E8EF7F008CE84D /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A72ED86128E8F4C6008CE84D /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		A72ED86328E8F7E5008CE84D /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
+		A72ED86528E8FF61008CE84D /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
 		A7487AAD28E539DE00E312CE /* LoLFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoLFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7487AB028E539DE00E312CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7487AB228E539DE00E312CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,11 +55,11 @@
 		A7A14A8428E5492200ED4127 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		A7A14A8628E5492B00ED4127 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		A7A14A8828E5493500ED4127 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		A7A55EA228E8D67F00B20DBC /* LoLFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoLFinder.xcdatamodel; sourceTree = "<group>"; };
 		A7BBB49A28E7E60D001B1712 /* PlayerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRepository.swift; sourceTree = "<group>"; };
 		A7BBB49C28E7E6CC001B1712 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		A7BBB4A028E7EE20001B1712 /* PlayerLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerLocalDataSource.swift; sourceTree = "<group>"; };
-		A7BBB4A328E7F61A001B1712 /* Player.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Player.xcdatamodel; sourceTree = "<group>"; };
-		A7BBB4A828E80684001B1712 /* CoreDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSource.swift; sourceTree = "<group>"; };
+		A7BBB4A028E7EE20001B1712 /* PlayerCoreDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCoreDataSource.swift; sourceTree = "<group>"; };
+		A7BBB4A828E80684001B1712 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +89,43 @@
 				562CE9D7EC8B65E1BFBA57E8 /* Pods_LoLFinder.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A72ED85728E8E6B7008CE84D /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				A72ED85428E8D7F6008CE84D /* PlayerEntity+CoreDataClass.swift */,
+				A72ED85328E8D7F6008CE84D /* PlayerEntity+CoreDataProperties.swift */,
+				A7A55EA128E8D67F00B20DBC /* LoLFinder.xcdatamodeld */,
+				A7BBB49C28E7E6CC001B1712 /* Player.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		A72ED85828E8E7E2008CE84D /* ExternalDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				A72ED85928E8E7FA008CE84D /* PlayerNetworkDataSource.swift */,
+			);
+			path = ExternalDataSource;
+			sourceTree = "<group>";
+		};
+		A72ED85B28E8ED87008CE84D /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				A72ED85C28E8ED96008CE84D /* PlayerEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		A72ED86028E8F48E008CE84D /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				A72ED86328E8F7E5008CE84D /* ParameterEncoder.swift */,
+				A72ED86128E8F4C6008CE84D /* URLParameterEncoder.swift */,
+				A72ED86528E8FF61008CE84D /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
 			sourceTree = "<group>";
 		};
 		A7487AA428E539DE00E312CE = {
@@ -134,6 +187,9 @@
 		A7A14A8A28E55E4400ED4127 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				A72ED85E28E8EF7F008CE84D /* API.swift */,
+				A72ED85B28E8ED87008CE84D /* Endpoints */,
+				A72ED86028E8F48E008CE84D /* Encoding */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -149,7 +205,7 @@
 		A7A14A8C28E55E9E00ED4127 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A7BBB49C28E7E6CC001B1712 /* Player.swift */,
+				A72ED85728E8E6B7008CE84D /* Player */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -164,9 +220,8 @@
 		A7BBB49E28E7EDDC001B1712 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				A72ED85828E8E7E2008CE84D /* ExternalDataSource */,
 				A7BBB4A728E8061D001B1712 /* LocalDataSource */,
-				A7BBB4A028E7EE20001B1712 /* PlayerLocalDataSource.swift */,
-				A7BBB4A228E7F61A001B1712 /* Player.xcdatamodeld */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -174,7 +229,8 @@
 		A7BBB4A728E8061D001B1712 /* LocalDataSource */ = {
 			isa = PBXGroup;
 			children = (
-				A7BBB4A828E80684001B1712 /* CoreDataSource.swift */,
+				A7BBB4A028E7EE20001B1712 /* PlayerCoreDataSource.swift */,
+				A7BBB4A828E80684001B1712 /* CoreDataManager.swift */,
 			);
 			path = LocalDataSource;
 			sourceTree = "<group>";
@@ -293,17 +349,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72ED86628E8FF61008CE84D /* JSONParameterEncoder.swift in Sources */,
+				A72ED85528E8D7F6008CE84D /* PlayerEntity+CoreDataClass.swift in Sources */,
 				A7487AC728E53AF200E312CE /* HomeViewController.swift in Sources */,
 				A7BBB49B28E7E60D001B1712 /* PlayerRepository.swift in Sources */,
 				A7487AB128E539DE00E312CE /* AppDelegate.swift in Sources */,
 				A7487AC528E53A9D00E312CE /* HomeModule.swift in Sources */,
 				A7A14A8728E5492B00ED4127 /* HomePresenter.swift in Sources */,
-				A7BBB4A128E7EE20001B1712 /* PlayerLocalDataSource.swift in Sources */,
-				A7BBB4A928E80684001B1712 /* CoreDataSource.swift in Sources */,
+				A7BBB4A128E7EE20001B1712 /* PlayerCoreDataSource.swift in Sources */,
+				A72ED85A28E8E7FA008CE84D /* PlayerNetworkDataSource.swift in Sources */,
+				A7BBB4A928E80684001B1712 /* CoreDataManager.swift in Sources */,
 				A7487AB328E539DE00E312CE /* SceneDelegate.swift in Sources */,
+				A72ED85628E8D7F6008CE84D /* PlayerEntity+CoreDataProperties.swift in Sources */,
 				A7A14A8528E5492200ED4127 /* HomeRouter.swift in Sources */,
-				A7BBB4A428E7F61A001B1712 /* Player.xcdatamodeld in Sources */,
+				A7A55EA328E8D67F00B20DBC /* LoLFinder.xcdatamodeld in Sources */,
+				A72ED85D28E8ED96008CE84D /* PlayerEndpoint.swift in Sources */,
+				A72ED86228E8F4C6008CE84D /* URLParameterEncoder.swift in Sources */,
 				A7BBB49D28E7E6CC001B1712 /* Player.swift in Sources */,
+				A72ED85F28E8EF7F008CE84D /* API.swift in Sources */,
+				A72ED86428E8F7E5008CE84D /* ParameterEncoder.swift in Sources */,
 				A7A14A8928E5493500ED4127 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,13 +584,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A7BBB4A228E7F61A001B1712 /* Player.xcdatamodeld */ = {
+		A7A55EA128E8D67F00B20DBC /* LoLFinder.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A7BBB4A328E7F61A001B1712 /* Player.xcdatamodel */,
+				A7A55EA228E8D67F00B20DBC /* LoLFinder.xcdatamodel */,
 			);
-			currentVersion = A7BBB4A328E7F61A001B1712 /* Player.xcdatamodel */;
-			path = Player.xcdatamodeld;
+			currentVersion = A7A55EA228E8D67F00B20DBC /* LoLFinder.xcdatamodel */;
+			path = LoLFinder.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
