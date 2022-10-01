@@ -12,6 +12,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
+        
+        // MARK:  Setting up root controller
         window = UIWindow(frame: scene.coordinateSpace.bounds)
         
         let homeModule = HomeModule()

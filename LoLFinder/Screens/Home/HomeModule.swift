@@ -12,14 +12,23 @@ final class HomeModule: ScreenModule {
     // Presenter
     private let presenter: HomePresentable
     private var baseController: UINavigationController = {
-        return UINavigationController(nibName: nil, bundle: nil)
+        UINavigationController(nibName: nil, bundle: nil)
     }()
-    
+
     // # MARK: Initializers
     init() {
+
+        // Data containers
+        let container = CoreDataSource().container
+        // Data sources
+        let playerLocalDataSource = PlayerLocalDataSource()
+        playerLocalDataSource.coreDataContainer = container
+        // Repositories
+        let playerRepository = PlayerRepository(playerLocalDataSource: playerLocalDataSource)
+        
+        // VIPER
+        let interactor = HomeInteractor(playerRepository: playerRepository)
         let router = HomeRouter(baseController: baseController)
-        /// Interactor needs repository
-        let interactor = HomeInteractor()
         let presenter = HomePresenter(router: router, interactor: interactor)
         self.presenter = presenter
     }

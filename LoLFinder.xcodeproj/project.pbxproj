@@ -17,6 +17,11 @@
 		A7A14A8528E5492200ED4127 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A14A8428E5492200ED4127 /* HomeRouter.swift */; };
 		A7A14A8728E5492B00ED4127 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A14A8628E5492B00ED4127 /* HomePresenter.swift */; };
 		A7A14A8928E5493500ED4127 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A14A8828E5493500ED4127 /* HomeInteractor.swift */; };
+		A7BBB49B28E7E60D001B1712 /* PlayerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BBB49A28E7E60D001B1712 /* PlayerRepository.swift */; };
+		A7BBB49D28E7E6CC001B1712 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BBB49C28E7E6CC001B1712 /* Player.swift */; };
+		A7BBB4A128E7EE20001B1712 /* PlayerLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BBB4A028E7EE20001B1712 /* PlayerLocalDataSource.swift */; };
+		A7BBB4A428E7F61A001B1712 /* Player.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7BBB4A228E7F61A001B1712 /* Player.xcdatamodeld */; };
+		A7BBB4A928E80684001B1712 /* CoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BBB4A828E80684001B1712 /* CoreDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		A7A14A8428E5492200ED4127 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		A7A14A8628E5492B00ED4127 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		A7A14A8828E5493500ED4127 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		A7BBB49A28E7E60D001B1712 /* PlayerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRepository.swift; sourceTree = "<group>"; };
+		A7BBB49C28E7E6CC001B1712 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A7BBB4A028E7EE20001B1712 /* PlayerLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerLocalDataSource.swift; sourceTree = "<group>"; };
+		A7BBB4A328E7F61A001B1712 /* Player.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Player.xcdatamodel; sourceTree = "<group>"; };
+		A7BBB4A828E80684001B1712 /* CoreDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +64,6 @@
 				72F1C5A8C7763FE7F8E45672 /* Pods-LoLFinder.debug.xcconfig */,
 				79F5C9FDC560BC1200343D5C /* Pods-LoLFinder.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -89,6 +98,7 @@
 			children = (
 				A7487AB028E539DE00E312CE /* AppDelegate.swift */,
 				A7487AB228E539DE00E312CE /* SceneDelegate.swift */,
+				A7BBB49E28E7EDDC001B1712 /* DataSource */,
 				A7A14A8C28E55E9E00ED4127 /* Models */,
 				A7A14A8A28E55E4400ED4127 /* Network */,
 				A7A14A8B28E55E5400ED4127 /* Repositories */,
@@ -131,6 +141,7 @@
 		A7A14A8B28E55E5400ED4127 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				A7BBB49A28E7E60D001B1712 /* PlayerRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -138,6 +149,7 @@
 		A7A14A8C28E55E9E00ED4127 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A7BBB49C28E7E6CC001B1712 /* Player.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,6 +159,24 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A7BBB49E28E7EDDC001B1712 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				A7BBB4A728E8061D001B1712 /* LocalDataSource */,
+				A7BBB4A028E7EE20001B1712 /* PlayerLocalDataSource.swift */,
+				A7BBB4A228E7F61A001B1712 /* Player.xcdatamodeld */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		A7BBB4A728E8061D001B1712 /* LocalDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				A7BBB4A828E80684001B1712 /* CoreDataSource.swift */,
+			);
+			path = LocalDataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,11 +294,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7487AC728E53AF200E312CE /* HomeViewController.swift in Sources */,
+				A7BBB49B28E7E60D001B1712 /* PlayerRepository.swift in Sources */,
 				A7487AB128E539DE00E312CE /* AppDelegate.swift in Sources */,
 				A7487AC528E53A9D00E312CE /* HomeModule.swift in Sources */,
 				A7A14A8728E5492B00ED4127 /* HomePresenter.swift in Sources */,
+				A7BBB4A128E7EE20001B1712 /* PlayerLocalDataSource.swift in Sources */,
+				A7BBB4A928E80684001B1712 /* CoreDataSource.swift in Sources */,
 				A7487AB328E539DE00E312CE /* SceneDelegate.swift in Sources */,
 				A7A14A8528E5492200ED4127 /* HomeRouter.swift in Sources */,
+				A7BBB4A428E7F61A001B1712 /* Player.xcdatamodeld in Sources */,
+				A7BBB49D28E7E6CC001B1712 /* Player.swift in Sources */,
 				A7A14A8928E5493500ED4127 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +518,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A7BBB4A228E7F61A001B1712 /* Player.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A7BBB4A328E7F61A001B1712 /* Player.xcdatamodel */,
+			);
+			currentVersion = A7BBB4A328E7F61A001B1712 /* Player.xcdatamodel */;
+			path = Player.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A7487AA528E539DE00E312CE /* Project object */;
 }
